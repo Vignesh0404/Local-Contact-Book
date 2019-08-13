@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DaTaBase </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<h1>CONTACTS STORING MANAGMENT SYSTEM LOCALLY</h1>
+	<div class="contacts-table-container" id="cmsTableContainer">
+		<div class="contacts-table-row">
+			<div class="contacts-table-column contacts-name contacts-header">NAME</div>
+			<div class="contacts-table-column contacts-phone contacts-header">PHONE-NO</div>
+			<div class="contacts-table-column contacts-address contacts-header">ADDRESS</div>
+			<div class="contacts-table-column  contacts-add-entry-column contacts-header" id="contactsAddNewEntry">+</div>
+		</div>
+		<span id="tableBody"></span>
+		
+	</div>
+
+	<div class="disable-modal" id="backdrop"></div>
+	<div class="disable-modal" id="newPersonalModal">
+		<h1>Add a new contact</h1>
+
+		<label>NAME</label>
+		<input type="text" name="newPersonName">
+
+		<label>PHONE-NO</label>
+		<input type="number" name="newPersonPhone">
+
+		<label>ADDRESS</label>
+		<input type="text" name="newPersonAddress">
+
+		<button id="newPersonCancelBtn">CANCEL</button>
+		<button id="newPersonSubmtitBtn">SUBMIT</button>
+	</div>
+
+	<button id="clearBtn" style="position: absolute; right: 0px; bottom: 0px;">Clear the DB</button>
+
+</body>
+</html>
